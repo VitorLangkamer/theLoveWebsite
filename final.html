@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/final.css">
+  <title>Uma Pergunta — The Love</title>
+</head>
+<body>
+
+  <!-- Corações flutuantes de fundo -->
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <!-- Partículas de celebração (aparecem ao clicar Sim) -->
+  <div class="confetti-container" id="confettiContainer"></div>
+
+  <main class="final-main" id="finalMain">
+
+    <!-- Cartão da pergunta -->
+    <div class="question-card" id="questionCard">
+
+      <!-- Cabeçalho -->
+      <div class="card-header">
+        <div class="hearts-row">
+          <span class="big-heart">♥</span>
+          <span class="big-heart big-heart--mid">♥</span>
+          <span class="big-heart">♥</span>
+        </div>
+        <p class="card-pre">Uma pergunta especial...</p>
+      </div>
+
+      <!-- A pergunta -->
+      <h1 class="the-question">
+        Você me ama e também quer sempre estar ao meu lado?
+      </h1>
+
+      <!-- Botões -->
+      <div class="buttons-area" id="buttonsArea">
+        <button class="answer-btn answer-btn--sim" id="btnSim" onclick="handleSim()">
+          <span class="btn-icon">♥</span>
+          <span>Sim!</span>
+        </button>
+        <button class="answer-btn answer-btn--nao" id="btnNao" onmouseenter="runAway()" ontouchstart="runAway()">
+          <span>Não</span>
+        </button>
+      </div>
+
+      <!-- Mensagem de "quase pegou" quando o botão foge -->
+      <p class="escape-msg" id="escapeMsg"></p>
+    </div>
+
+    <!-- Tela de celebração (aparece após clicar Sim) -->
+    <div class="celebration" id="celebration">
+      <div class="plumbob plumbob--celebrate"></div>
+      <h1 class="celebrate-title">EU SABIA!! ♥</h1>
+      <div class="celebrate-hearts">
+        <span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span>
+      </div>
+      <p class="celebrate-msg">
+        Eu te amo muito, Amor.<br>
+        Obrigado por fazer cada dia valer a pena.<br>
+        Essa história é só nossa — e ela ainda tem muuuitos capítulos pra serem escritos. ♥
+      </p>
+      <a href="index.html" class="restart-btn">
+        ↩ Voltar ao início
+      </a>
+    </div>
+
+  </main>
+
+  <script src="js/final.js"></script>
+</body>
+</html>

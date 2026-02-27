@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+  <title>The Love — Para Samira</title>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       SPLASH SCREEN
+  ══════════════════════════════════════ -->
+  <div class="splash-screen" id="splash">
+    <div class="splash-overlay"></div>
+    <div class="splash-logo">
+      <div class="plumbob-wrapper">
+        <div class="plumbob"><img src="assets/logo sims.png" alt="logo the sims"></div>
+      </div>
+      <p class="splash-text">Carregando sua surpresa...</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       HOME CONTENT
+  ══════════════════════════════════════ -->
+  <div id="home" class="home-content">
+
+    <!-- Background desfocado -->
+    <div class="background-layer"></div>
+    <!-- Overlay escuro -->
+    <div class="overlay-layer"></div>
+
+    <!-- Conteúdo principal -->
+    <div class="content-layer">
+
+      <!-- NAVBAR -->
+      <header>
+        <nav class="navbar">
+          <div class="nav-left">
+            <img src="assets/logoThelove.png" alt="The Love" class="nav-logo">
+          </div>
+          <div class="nav-center">
+            <ul class="nav-links">
+              <li><a href="index.html" class="nav-button">Menu principal</a></li>
+              <li><a href="inicio.html" class="nav-button">Nossa História</a></li>
+            </ul>
+          </div>
+          <div class="nav-right">
+            <p class="user-greeting">
+              <span class="greeting-diamond">◆</span> Samira, seja bem-vinda!
+            </p>
+          </div>
+        </nav>
+      </header>
+
+      <!-- HERO CENTRAL -->
+      <main class="hero-section">
+        <div class="hero-plumbob">
+          <div class="plumbob plumbob--large"></div>
+        </div>
+        <!-- <h1 class="hero-title">The Love</h1> -->
+        <p class="hero-subtitle">Nossa, feita especialmente pra você!</p>
+
+        <!-- MENU PRINCIPAL ESTILO SIMS -->
+        <div class="sims-menu">
+          <a href="inicio.html" class="sims-btn sims-btn--primary">
+            <span class="sims-btn-icon">♥</span>
+            <span class="sims-btn-label">Novo Jogo</span>
+          </a>
+          <a href="musica.html" class="sims-btn sims-btn--secondary">
+            <span class="sims-btn-icon">♫</span>
+            <span class="sims-btn-label">Música</span>
+          </a>
+          <a href="inicio.html" class="sims-btn sims-btn--tertiary">
+            <span class="sims-btn-icon">◈</span>
+            <span class="sims-btn-label">Galeria</span>
+          </a>
+        </div>
+
+        <!-- Contador de dias
+        <div class="love-counter">
+          <div class="counter-inner">
+            <span class="counter-label">Juntos há</span>
+            <span class="counter-number" id="daysCount">0</span>
+            <span class="counter-label">dias</span>
+          </div>
+        </div> -->
+      </main>
+
+    </div><!-- /content-layer -->
+  </div><!-- /home-content -->
+
+</body>
+</html>
